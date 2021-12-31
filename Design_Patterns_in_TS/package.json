@@ -1,0 +1,23 @@
+{
+  "name": "design-patterns-in-ts",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "dependencies": {
+    "@types/google.maps": "^3.47.2",
+    "faker": "^5.5.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "@types/faker": "^5.5.9",
+    "parcel": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
