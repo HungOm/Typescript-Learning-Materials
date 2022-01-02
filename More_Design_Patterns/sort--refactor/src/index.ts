@@ -39,4 +39,4 @@ linkedList.print();
 //Abstract class/Inheritnace
     // 1) Sets up a contract between differnt classes
     // 2) Use when we are trying to build up a definition of an object
-    // 3) strongly couples classes together
+    // 3) strongly couples classes together 
