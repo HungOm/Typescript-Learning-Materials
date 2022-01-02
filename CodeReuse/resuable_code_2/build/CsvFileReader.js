@@ -7,7 +7,6 @@ exports.CsvFileReader = void 0;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const utils_1 = require("./utils");
-// import { matchResult } from './MatchResult';
 class CsvFileReader {
     constructor(filename) {
         this.filename = filename;
