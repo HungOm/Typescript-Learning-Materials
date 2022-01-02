@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const MatchReader_1 = require("./MatchReader");
-const CsvFileReader_1 = require("./CsvFileReader");
-const WinAnalysis_1 = require("./analyzers/WinAnalysis");
 const summary_1 = require("./summary");
-const HtmlReport_1 = require("./reportTargets/HtmlReport");
-const csv_reader = new CsvFileReader_1.CsvFileReader('./../football.csv');
-const dataReader = new MatchReader_1.MatchReader(csv_reader);
-dataReader.load();
-const summary = new summary_1.Summary(new WinAnalysis_1.WinAnalysis('Man United'), new HtmlReport_1.HtmlReport());
-summary.buildAndPrintReport(dataReader.matches);
+const csv_reader = MatchReader_1.MatchReader.fromCsv('./../football.csv');
+csv_reader.load();
+// const summary = new Summary(
+//     new WinAnalysis('Man United'),
+//     new HtmlReport()
+// )
+// static allow class to access without creating instance - e.g new Summary()
+const summary = summary_1.Summary.winAnalysisHtmlReport('Man United');
+summary.buildAndPrintReport(csv_reader.matches);
