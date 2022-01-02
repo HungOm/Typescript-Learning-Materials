@@ -4,6 +4,8 @@ import { CsvFileReader } from './CsvFileReader';
 const reader = new CsvFileReader('./../football.csv');
 reader.read();
 
+console.log(reader.data)
+
 // use enum to tell other engineers that this are closely relative objects 
 enum matchResult {
     homeWin='H',
