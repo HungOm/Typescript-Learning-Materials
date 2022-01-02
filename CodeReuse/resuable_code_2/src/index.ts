@@ -1,17 +1,10 @@
 
 import { CsvFileReader } from './CsvFileReader';
+import { matchResult } from './MatchResult';
+
 
 const reader = new CsvFileReader('./../football.csv');
 reader.read();
-
-console.log(reader.data)
-
-// use enum to tell other engineers that this are closely relative objects 
-enum matchResult {
-    homeWin='H',
-    awayWin='A',
-    draw ="D"
-};
 
 let manUnitedWins = 0;
 
